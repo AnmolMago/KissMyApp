@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#183863"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/tabletName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="sdfdfs"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/tabletImage"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_weight="0.03"
+        android:src="@drawable/tablet_red" />
+
+    <ListView
+        android:id="@+id/tabletTimeList"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="0.60" >
+    </ListView>
+
+    <Button
+        android:id="@+id/deleteTablet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ec1656"
+        android:text="Delete"
+        android:textSize="24sp" />
+
+</LinearLayout>

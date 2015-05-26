@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	<LinearLayout 
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:orientation="vertical" >
+	    
+	    <RelativeLayout 
+	        android:id="@+id/inputNameContainer"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+	        
+	        <TextView 
+	            android:id="@+id/inputName"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="22sp"
+	        	android:text="Name"
+	            />
+	        
+	        <EditText 
+		        android:id="@+id/inputNameEntry"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/inputName"
+	    		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		        android:ems="10">
+	        	<requestFocus />
+	        </EditText>
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/inputTimeContainer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/activity_vertical_margin"
+	        android:minHeight="40dp" 
+	        android:orientation="vertical">
+	        
+	        <TextView 
+	            android:id="@+id/inputTime"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="22sp"
+	        	android:layout_marginBottom="5dp"
+	        	android:text="Time"
+	            />
+		    
+	        <LinearLayout
+	            android:id="@+id/timeSlots"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		        android:layout_below="@id/inputTime"
+				android:orientation="vertical" >
+	            
+	        </LinearLayout>
+	        
+	        <TextView 
+	            android:id="@+id/inputAddTimeSlot"
+				android:layout_below="@id/timeSlots"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textColor="#0099ff"
+	        	android:layout_alignParentLeft="true"
+	        	android:textSize="15sp"
+	        	android:text="add a Time Slot +"/>
+	        
+	        <TextView 
+	            android:id="@+id/inputRemoveTimeSlot"
+				android:layout_below="@id/timeSlots"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textColor="#0099ff"
+	        	android:layout_alignParentRight="true"
+	        	android:textSize="15sp"
+	        	android:text="remove a Time Slot +"/>
+	        
+	    </RelativeLayout>    
+	    
+	    <RelativeLayout 
+	        android:id="@+id/inputDurationContainer"
+	        android:layout_marginTop="@dimen/activity_vertical_margin"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+	        
+	        <TextView 
+	            android:id="@+id/inputDuration"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="22sp"
+	        	android:text="Duration"
+	            />
+	        
+	        <LinearLayout
+	        android:id="@+id/inputDurationDatesContainer"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:layout_below="@id/inputDuration"
+	    	android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		    android:orientation="horizontal">
+	            <RelativeLayout 
+		        android:id="@+id/inputDurationStart"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+	                <TextView
+			        android:id="@+id/startTitle"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="15sp"
+				    android:textColor="#0099ff"
+				    android:text="start date"/>
+	                <TextView
+			        android:id="@+id/startDate"
+			        android:tag="startDate"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_below="@id/startTitle"
+	   				android:onClick="showDatePickerDialog" 
+				    android:textSize="20sp"
+				    android:text="Mon Oct 17"/>
+	                
+	            </RelativeLayout>
+	            <RelativeLayout 
+		        android:id="@+id/inputDurationEnd"
+		        android:layout_marginLeft="25dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+	                <TextView
+			        android:id="@+id/endTitle"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="15sp"
+				    android:textColor="#0099ff"
+				    android:text="end date"/>
+	                <TextView
+			        android:id="@+id/endDate"
+			        android:tag="endDate"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_below="@id/endTitle"
+	    			android:onClick="showDatePickerDialog" 
+				    android:textSize="20sp"
+				    android:text="Mon Oct 17"/>
+	                
+	            </RelativeLayout>
+	        </LinearLayout>
+	        
+	    </RelativeLayout>
+	    
+	    
+	        <LinearLayout
+	            android:id="@+id/tabletChoices"
+	    		android:layout_marginTop="@dimen/activity_vertical_margin"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:orientation="horizontal">
+	
+	        </LinearLayout>
+	<RelativeLayout 
+	        android:id="@+id/submitContainer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <Button
+	            android:id="@+id/submitTabletInput"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	    		android:layout_marginTop="@dimen/activity_vertical_margin"
+	            android:background="#183863"
+	            android:textColor="#ffffff"
+	    		android:paddingLeft="10dp"
+	    		android:paddingRight="10dp"
+	    		android:layout_centerHorizontal="true"
+	            android:text="Submit!" />
+	</RelativeLayout>
+	
+	</LinearLayout>
+</ScrollView>

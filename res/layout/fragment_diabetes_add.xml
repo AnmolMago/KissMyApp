@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:shrinkColumns="0"
+    android:stretchColumns="1" >
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:minHeight="55dp"
+         >
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center_vertical|right"
+            android:maxWidth="95dp"
+            android:text="Date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/editdateLabel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="16/11/2014"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:minHeight="55dp"
+         >
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center_vertical|right"
+            android:maxWidth="95dp"
+            android:text="Time"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edittimeLabel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="12:38 PM"
+            android:textSize="16sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:minHeight="55dp"
+         >
+
+        <TextView
+            android:id="@+id/glucoseLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center_vertical|right"
+            android:maxWidth="95dp"
+            android:text="Blood Gsssslucose"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editglucose"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="5.0 mmo/L"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:minHeight="55dp"
+         >
+
+        <TextView
+            android:id="@+id/shortInsulinLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center_vertical|right"
+            android:maxWidth="95dp"
+            android:text="Short Acting Insulin"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editshortInsulinLabel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="0.0 units"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:minHeight="55dp"
+         >
+
+        <TextView
+            android:id="@+id/longInsulinLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center_vertical|right"
+            android:maxWidth="95dp"
+            android:text="Long Acting Insulin"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editlongInsulinLabel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="0.0 units"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:minHeight="55dp" >
+
+        <Button
+            android:id="@+id/submitDlog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="300dp"
+            android:layout_span="2"
+            android:background="#22b573"
+            android:textColor="#ffffff"
+            android:text="Submit" />
+
+    </TableRow>
+
+</TableLayout>

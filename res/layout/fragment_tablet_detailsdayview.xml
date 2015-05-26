@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+	android:background="#183863">
+	<RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+		<TextView
+		    android:id="@+id/dayName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:textColor="#ffffff"
+		    android:textSize="50sp"
+		    android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	</RelativeLayout>
+
+    <GridView
+        android:id="@+id/tabletGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3.00"
+        android:numColumns="3" >
+
+    </GridView>
+
+</LinearLayout>

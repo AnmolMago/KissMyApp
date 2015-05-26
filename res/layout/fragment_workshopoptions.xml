@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/parentLabel"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:gravity="center_vertical|left"
+        android:text="notHOSPITAL"
+        android:textColor="#003366"
+        android:textSize="40sp" />
+
+    <ListView
+        android:id="@+id/directionsOptionsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parentLabel"
+        android:layout_marginLeft="30sp"
+        android:layout_toRightOf="@+id/imageView1" >
+    </ListView>
+
+</RelativeLayout>
